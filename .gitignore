@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Large dataset
+data/amazon_products.csv
