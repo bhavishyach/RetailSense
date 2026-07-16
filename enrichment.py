@@ -38,7 +38,7 @@ def ensure_enriched_table(conn: sqlite3.Connection) -> None:
             generated_description TEXT,
             attributes TEXT,
             confidence_score REAL,
-            latency_ms INTEGER,
+            latency_ms REAL,
             enrichment_status TEXT,
             failure_reason TEXT,
             enriched_at TIMESTAMP,
@@ -206,7 +206,7 @@ def parse_claude_output(raw_output: str) -> List[Dict[str, Any]]:
 def prepare_enrichment_rows(
     records: List[Dict[str, Any]],
     response_items: List[Dict[str, Any]],
-    latency_ms: int,
+    latency_ms: float,
     model_version: str,
     failure_reason: Optional[str] = None
 ) -> List[Dict[str, Any]]:
@@ -389,7 +389,7 @@ def enrich_batch(
     max_tokens: int,
     rate_limit: float,
     use_mock: bool
-) -> Tuple[int, int]:
+) -> Tuple[int, float]:
     prompt = build_prompt(batch)
     start_time = time.perf_counter()
     model_version = model
@@ -399,7 +399,7 @@ def enrich_batch(
         else:
             raw_output = call_claude_api(prompt, api_url, api_key, model, max_tokens)
             response_items = parse_claude_output(raw_output)
-        latency_ms = int((time.perf_counter() - start_time) * 1000)
+        latency_ms = round((time.perf_counter() - start_time) * 1000, 3)
         enriched_rows = prepare_enrichment_rows(batch, response_items, latency_ms, model_version)
         inserted = insert_enriched_records(conn, enriched_rows)
         successful = sum(1 for row in enriched_rows if row['enrichment_status'] == 'success')
@@ -408,7 +408,7 @@ def enrich_batch(
         time.sleep(rate_limit)
         return inserted, latency_ms
     except Exception as exc:
-        latency_ms = int((time.perf_counter() - start_time) * 1000)
+        latency_ms = round((time.perf_counter() - start_time) * 1000, 3)
         failure_reason = str(exc)
         failed_rows = prepare_enrichment_rows(batch, [], latency_ms, model_version, failure_reason=failure_reason)
         inserted = insert_enriched_records(conn, failed_rows)
