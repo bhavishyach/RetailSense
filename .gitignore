@@ -10,3 +10,17 @@ __pycache__/
 
 # Large dataset
 data/amazon_products.csv
+
+# Virtual environment
+.venv/
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow-webserver.pid
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/

@@ -1,5 +1,0 @@
-[2026-07-16T23:17:38.943+0530] {processor.py:186} INFO - Started process (PID=72211) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/plugins/listener_plugin.py
-[2026-07-16T23:17:38.944+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/plugins/listener_plugin.py for tasks to queue
-[2026-07-16T23:17:38.944+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:38.944+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/plugins/listener_plugin.py
-[2026-07-16T23:17:38.945+0530] {processor.py:927} WARNING - No viable dags retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/plugins/listener_plugin.py
-[2026-07-16T23:17:38.978+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/plugins/listener_plugin.py took 0.037 seconds
