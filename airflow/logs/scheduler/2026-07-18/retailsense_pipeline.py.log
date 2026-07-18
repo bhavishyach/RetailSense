@@ -1,0 +1,168 @@
+[2026-07-18T15:35:42.335+0530] {processor.py:186} INFO - Started process (PID=3227) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:35:42.335+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:35:42.336+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:35:42.336+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:35:42.339+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:35:42.366+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:35:42.366+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:35:42.372+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:35:42.372+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-17 00:00:00+00:00, run_after=2026-07-18 00:00:00+00:00
+[2026-07-18T15:35:42.377+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.043 seconds
+[2026-07-18T15:37:14.261+0530] {processor.py:186} INFO - Started process (PID=3485) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:37:14.262+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:37:14.263+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:37:14.263+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:37:14.265+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:37:14.289+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:37:14.289+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:37:14.294+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:37:14.294+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:37:14.299+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.038 seconds
+[2026-07-18T15:38:16.335+0530] {processor.py:186} INFO - Started process (PID=3645) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:38:16.336+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:38:16.336+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:38:16.336+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:38:16.339+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:38:16.363+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:38:16.363+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:38:16.368+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:38:16.368+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:38:16.372+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:39:17.976+0530] {processor.py:186} INFO - Started process (PID=3820) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:39:17.976+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:39:17.976+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:39:17.976+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:39:17.979+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:39:18.004+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:39:18.004+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:39:18.009+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:39:18.009+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:39:18.014+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:40:08.374+0530] {processor.py:186} INFO - Started process (PID=3949) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:40:08.375+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:40:08.376+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:40:08.376+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:40:08.379+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:40:08.403+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:40:08.403+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:40:08.408+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:40:08.408+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:40:08.413+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:40:57.238+0530] {processor.py:186} INFO - Started process (PID=4072) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:40:57.239+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:40:57.239+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:40:57.239+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:40:57.242+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:40:57.266+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:40:57.266+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:40:57.271+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:40:57.271+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:40:57.276+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:41:47.800+0530] {processor.py:186} INFO - Started process (PID=4212) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:41:47.800+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:41:47.800+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:41:47.800+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:41:47.804+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:41:47.829+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:41:47.829+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:41:47.835+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:41:47.834+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:41:47.839+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.040 seconds
+[2026-07-18T15:42:40.343+0530] {processor.py:186} INFO - Started process (PID=4340) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:42:40.344+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:42:40.344+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:42:40.344+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:42:40.346+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:42:40.371+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:42:40.371+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:42:40.376+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:42:40.376+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:42:40.381+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:43:33.374+0530] {processor.py:186} INFO - Started process (PID=4506) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:43:33.376+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:43:33.376+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:43:33.376+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:43:33.379+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:43:33.404+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:43:33.404+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:43:33.409+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:43:33.409+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:43:33.413+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.040 seconds
+[2026-07-18T15:44:34.922+0530] {processor.py:186} INFO - Started process (PID=4661) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:44:34.923+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:44:34.923+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:44:34.923+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:44:34.926+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:44:34.952+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:44:34.952+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:44:34.957+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:44:34.957+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:44:34.962+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.042 seconds
+[2026-07-18T15:45:27.285+0530] {processor.py:186} INFO - Started process (PID=4792) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:45:27.285+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:45:27.286+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:45:27.286+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:45:27.288+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:45:27.313+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:45:27.313+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:45:27.318+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:45:27.318+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:45:27.323+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:46:19.451+0530] {processor.py:186} INFO - Started process (PID=4919) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:46:19.451+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:46:19.452+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:46:19.452+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:46:19.454+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:46:19.479+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:46:19.479+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:46:19.484+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:46:19.484+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:46:19.489+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:47:11.645+0530] {processor.py:186} INFO - Started process (PID=5075) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:47:11.646+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:47:11.646+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:47:11.646+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:47:11.649+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:47:11.674+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:47:11.674+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:47:11.679+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:47:11.679+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:47:11.684+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.040 seconds
+[2026-07-18T15:48:03.841+0530] {processor.py:186} INFO - Started process (PID=5211) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:48:03.841+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:48:03.842+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:48:03.842+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:48:03.845+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:48:03.870+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:48:03.870+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:48:03.875+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:48:03.875+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:48:03.880+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.040 seconds
+[2026-07-18T15:48:56.114+0530] {processor.py:186} INFO - Started process (PID=5358) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:48:56.115+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:48:56.116+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:48:56.116+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:48:56.119+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:48:56.146+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:48:56.145+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:48:56.151+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:48:56.151+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:48:56.156+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.043 seconds
+[2026-07-18T15:49:51.549+0530] {processor.py:186} INFO - Started process (PID=5499) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:49:51.550+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:49:51.550+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:49:51.550+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:49:51.553+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:49:51.578+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:49:51.578+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:49:51.583+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:49:51.583+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:49:51.588+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.040 seconds
+[2026-07-18T15:50:44.348+0530] {processor.py:186} INFO - Started process (PID=5639) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:50:44.349+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:50:44.350+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:50:44.350+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:50:44.352+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:50:44.377+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:50:44.377+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:50:44.383+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:50:44.383+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:50:44.387+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.040 seconds
+[2026-07-18T15:51:34.873+0530] {processor.py:186} INFO - Started process (PID=5767) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:51:34.874+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:51:34.874+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:51:34.874+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:51:34.877+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:51:34.901+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:51:34.901+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:51:34.906+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:51:34.906+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:51:34.911+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:52:25.445+0530] {processor.py:186} INFO - Started process (PID=5889) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:52:25.446+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:52:25.446+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:52:25.446+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:52:25.449+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:52:25.475+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:52:25.475+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:52:25.480+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:52:25.480+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:52:25.485+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.041 seconds
+[2026-07-18T15:53:16.842+0530] {processor.py:186} INFO - Started process (PID=6030) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:53:16.844+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:53:16.844+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:53:16.844+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:53:16.847+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:53:16.871+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:53:16.871+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:53:16.876+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:53:16.876+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:53:16.881+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.040 seconds
+[2026-07-18T15:54:09.375+0530] {processor.py:186} INFO - Started process (PID=6159) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:54:09.377+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:54:09.377+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:54:09.377+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:54:09.380+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:54:09.405+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:54:09.405+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:54:09.411+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:54:09.411+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:54:09.416+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.041 seconds
+[2026-07-18T15:55:02.634+0530] {processor.py:186} INFO - Started process (PID=6288) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:55:02.634+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:55:02.635+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:55:02.635+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:55:02.638+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:55:02.662+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:55:02.662+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:55:02.667+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:55:02.667+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:55:02.672+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.039 seconds
+[2026-07-18T15:55:55.013+0530] {processor.py:186} INFO - Started process (PID=6420) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:55:55.015+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:55:55.015+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:55:55.015+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:55:55.018+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:55:55.046+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:55:55.046+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:55:55.052+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:55:55.052+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:55:55.058+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.046 seconds
+[2026-07-18T15:56:46.205+0530] {processor.py:186} INFO - Started process (PID=6558) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:56:46.206+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py for tasks to queue
+[2026-07-18T15:56:46.206+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:56:46.206+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:56:46.209+0530] {processor.py:925} INFO - DAG(s) 'retailsense_pipeline' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py
+[2026-07-18T15:56:46.234+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:56:46.234+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-18T15:56:46.239+0530] {logging_mixin.py:190} INFO - [2026-07-18T15:56:46.239+0530] {dag.py:4180} INFO - Setting next_dagrun for retailsense_pipeline to 2026-07-18 00:00:00+00:00, run_after=2026-07-19 00:00:00+00:00
+[2026-07-18T15:56:46.245+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/airflow/dags/retailsense_pipeline.py took 0.041 seconds

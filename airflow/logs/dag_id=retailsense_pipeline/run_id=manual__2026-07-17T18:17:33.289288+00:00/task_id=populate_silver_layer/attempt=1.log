@@ -1,0 +1,43 @@
+[2026-07-17T23:47:50.965+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-17T23:47:50.968+0530] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retailsense_pipeline.populate_silver_layer manual__2026-07-17T18:17:33.289288+00:00 [queued]>
+[2026-07-17T23:47:50.970+0530] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retailsense_pipeline.populate_silver_layer manual__2026-07-17T18:17:33.289288+00:00 [queued]>
+[2026-07-17T23:47:50.970+0530] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2026-07-17T23:47:50.973+0530] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): populate_silver_layer> on 2026-07-17 18:17:33.289288+00:00
+[2026-07-17T23:47:50.977+0530] {logging_mixin.py:190} WARNING - /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=181) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-07-17T23:47:50.978+0530] {standard_task_runner.py:72} INFO - Started process 183 to run task
+[2026-07-17T23:47:50.977+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'retailsense_pipeline', 'populate_silver_layer', 'manual__2026-07-17T18:17:33.289288+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/retailsense_pipeline.py', '--cfg-path', '/var/folders/6d/4xc4k_515k3_5l_yp9jq8r540000gn/T/tmpxykt0c1q']
+[2026-07-17T23:47:50.978+0530] {standard_task_runner.py:105} INFO - Job 7: Subtask populate_silver_layer
+[2026-07-17T23:47:50.990+0530] {task_command.py:467} INFO - Running <TaskInstance: retailsense_pipeline.populate_silver_layer manual__2026-07-17T18:17:33.289288+00:00 [running]> on host Bhavishyas-MacBook-Air.local
+[2026-07-17T23:47:51.005+0530] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='retailsense_pipeline' AIRFLOW_CTX_TASK_ID='populate_silver_layer' AIRFLOW_CTX_EXECUTION_DATE='2026-07-17T18:17:33.289288+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-07-17T18:17:33.289288+00:00'
+[2026-07-17T23:47:51.006+0530] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-07-17T23:47:51.006+0530] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-07-17T23:47:51.006+0530] {logging_mixin.py:190} INFO - Current task name:populate_silver_layer state:running start_date:2026-07-17 18:17:50.968896+00:00
+[2026-07-17T23:47:51.007+0530] {logging_mixin.py:190} INFO - Dag name:retailsense_pipeline and current dag run status:running
+[2026-07-17T23:47:51.007+0530] {taskinstance.py:732} INFO - ::endgroup::
+[2026-07-17T23:47:51.007+0530] {subprocess.py:78} INFO - Tmp dir root location: /var/folders/6d/4xc4k_515k3_5l_yp9jq8r540000gn/T
+[2026-07-17T23:47:51.008+0530] {subprocess.py:88} INFO - Running command: ['/bin/bash', '-c', 'cd /Users/bhavishyachallagolla/Desktop/RetailSense && python enrichment.py']
+[2026-07-17T23:47:51.011+0530] {subprocess.py:99} INFO - Output:
+[2026-07-17T23:47:51.054+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:51,054 - WARNING - CLAUDE_API_KEY not set. Falling back to mock enrichment mode.
+[2026-07-17T23:47:51.054+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:51,054 - INFO - Starting RetailSense Silver Layer Enrichment
+[2026-07-17T23:47:51.054+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:51,054 - INFO - Database: retailsense.db
+[2026-07-17T23:47:51.054+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:51,054 - INFO - Batch size: 5, rate limit: 1.0s, max tokens: 300
+[2026-07-17T23:47:51.054+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:51,054 - INFO - Model: claude-3.5, API URL: https://api.anthropic.com/v1/complete
+[2026-07-17T23:47:51.054+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:51,054 - INFO - Using mock mode: True
+[2026-07-17T23:47:51.055+0530] {subprocess.py:106} INFO - /Users/bhavishyachallagolla/Desktop/RetailSense/enrichment.py:253: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[2026-07-17T23:47:51.055+0530] {subprocess.py:106} INFO -   'enriched_at': datetime.utcnow().isoformat(),
+[2026-07-17T23:47:51.056+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:51,056 - INFO - Enriched batch of 5 ASINs in 0.021ms (inserted 5)
+[2026-07-17T23:47:52.061+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:52,061 - INFO - Enrichment complete
+[2026-07-17T23:47:52.062+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:52,061 - INFO - Total batches processed: 1
+[2026-07-17T23:47:52.063+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:52,061 - INFO - Total records attempted: 5
+[2026-07-17T23:47:52.064+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:52,061 - INFO - Total records inserted: 5
+[2026-07-17T23:47:52.064+0530] {subprocess.py:106} INFO - 2026-07-17 23:47:52,061 - INFO - Total elapsed time: 1.01s
+[2026-07-17T23:47:52.086+0530] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-07-17T23:47:52.100+0530] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-07-17T23:47:52.101+0530] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=retailsense_pipeline, task_id=populate_silver_layer, run_id=manual__2026-07-17T18:17:33.289288+00:00, execution_date=20260717T181733, start_date=20260717T181750, end_date=20260717T181752
+[2026-07-17T23:47:52.107+0530] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-07-17T23:47:52.108+0530] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-07-17T23:47:52.108+0530] {logging_mixin.py:190} INFO - Dag name:retailsense_pipeline queued_at:2026-07-17 18:17:33.298310+00:00
+[2026-07-17T23:47:52.108+0530] {logging_mixin.py:190} INFO - Task hostname:Bhavishyas-MacBook-Air.local operator:BashOperator
+[2026-07-17T23:47:52.137+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-07-17T23:47:52.149+0530] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-07-17T23:47:52.149+0530] {local_task_job_runner.py:245} INFO - ::endgroup::

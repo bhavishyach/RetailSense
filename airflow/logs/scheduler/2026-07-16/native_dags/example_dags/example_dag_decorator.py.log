@@ -1,0 +1,15 @@
+[2026-07-16T23:19:07.774+0530] {processor.py:186} INFO - Started process (PID=73992) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-07-16T23:19:07.775+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2026-07-16T23:19:07.776+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.776+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-07-16T23:19:07.862+0530] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py
+[2026-07-16T23:19:07.945+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.945+0530] {override.py:1912} INFO - Created Permission View: can read on DAG:example_dag_decorator
+[2026-07-16T23:19:07.949+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.949+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_dag_decorator
+[2026-07-16T23:19:07.951+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.951+0530] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_dag_decorator
+[2026-07-16T23:19:07.954+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.954+0530] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_dag_decorator
+[2026-07-16T23:19:07.956+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.956+0530] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_dag_decorator
+[2026-07-16T23:19:07.958+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.958+0530] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_dag_decorator
+[2026-07-16T23:19:07.960+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.960+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_dag_decorator
+[2026-07-16T23:19:07.961+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.961+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-16T23:19:07.966+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.966+0530] {dag.py:3262} INFO - Creating ORM DAG for example_dag_decorator
+[2026-07-16T23:19:07.966+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:07.966+0530] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2026-07-16T23:19:07.973+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_dag_decorator.py took 0.200 seconds

@@ -1,0 +1,16 @@
+[2026-07-16T23:18:06.121+0530] {processor.py:186} INFO - Started process (PID=72757) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2026-07-16T23:18:06.123+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py for tasks to queue
+[2026-07-16T23:18:06.124+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.123+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2026-07-16T23:18:06.128+0530] {processor.py:925} INFO - DAG(s) 'example_time_delta_sensor_async' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2026-07-16T23:18:06.180+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.179+0530] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2026-07-16T23:18:06.230+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.230+0530] {override.py:1912} INFO - Created Permission View: can read on DAG:example_time_delta_sensor_async
+[2026-07-16T23:18:06.234+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.234+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_time_delta_sensor_async
+[2026-07-16T23:18:06.237+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.237+0530] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_time_delta_sensor_async
+[2026-07-16T23:18:06.241+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.241+0530] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_time_delta_sensor_async
+[2026-07-16T23:18:06.244+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.244+0530] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_time_delta_sensor_async
+[2026-07-16T23:18:06.246+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.246+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_time_delta_sensor_async
+[2026-07-16T23:18:06.249+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.248+0530] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_time_delta_sensor_async
+[2026-07-16T23:18:06.249+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.249+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-16T23:18:06.255+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.255+0530] {dag.py:3262} INFO - Creating ORM DAG for example_time_delta_sensor_async
+[2026-07-16T23:18:06.255+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:06.255+0530] {dag.py:4180} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2026-07-16T23:18:06.262+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_time_delta_sensor_async.py took 0.142 seconds

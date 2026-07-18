@@ -1,0 +1,15 @@
+[2026-07-16T23:18:47.078+0530] {processor.py:186} INFO - Started process (PID=73570) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2026-07-16T23:18:47.079+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_latest_only_with_trigger.py for tasks to queue
+[2026-07-16T23:18:47.080+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.080+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2026-07-16T23:18:47.085+0530] {processor.py:925} INFO - DAG(s) 'latest_only_with_trigger' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_latest_only_with_trigger.py
+[2026-07-16T23:18:47.197+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.196+0530] {override.py:1912} INFO - Created Permission View: can edit on DAG:latest_only_with_trigger
+[2026-07-16T23:18:47.203+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.203+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG:latest_only_with_trigger
+[2026-07-16T23:18:47.207+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.207+0530] {override.py:1912} INFO - Created Permission View: can read on DAG:latest_only_with_trigger
+[2026-07-16T23:18:47.211+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.211+0530] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:latest_only_with_trigger
+[2026-07-16T23:18:47.215+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.215+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:latest_only_with_trigger
+[2026-07-16T23:18:47.219+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.219+0530] {override.py:1912} INFO - Created Permission View: can create on DAG Run:latest_only_with_trigger
+[2026-07-16T23:18:47.222+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.222+0530] {override.py:1912} INFO - Created Permission View: can read on DAG Run:latest_only_with_trigger
+[2026-07-16T23:18:47.222+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.222+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-16T23:18:47.230+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.230+0530] {dag.py:3262} INFO - Creating ORM DAG for latest_only_with_trigger
+[2026-07-16T23:18:47.239+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:47.239+0530] {dag.py:4180} INFO - Setting next_dagrun for latest_only_with_trigger to 2026-07-16 12:00:00+00:00, run_after=2026-07-16 16:00:00+00:00
+[2026-07-16T23:18:47.250+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_latest_only_with_trigger.py took 0.175 seconds

@@ -1,0 +1,17 @@
+[2026-07-16T23:17:59.971+0530] {processor.py:186} INFO - Started process (PID=72630) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_workday_timetable.py
+[2026-07-16T23:17:59.972+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2026-07-16T23:17:59.973+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:59.973+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_workday_timetable.py
+[2026-07-16T23:17:59.975+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:59.974+0530] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2026-07-16T23:17:59.978+0530] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_workday_timetable.py
+[2026-07-16T23:18:00.029+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.029+0530] {workday.py:41} WARNING - Could not import pandas. Holidays will not be considered.
+[2026-07-16T23:18:00.083+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.083+0530] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_workday_timetable
+[2026-07-16T23:18:00.088+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.087+0530] {override.py:1912} INFO - Created Permission View: can read on DAG:example_workday_timetable
+[2026-07-16T23:18:00.091+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.090+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_workday_timetable
+[2026-07-16T23:18:00.094+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.094+0530] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_workday_timetable
+[2026-07-16T23:18:00.097+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.097+0530] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_workday_timetable
+[2026-07-16T23:18:00.099+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.099+0530] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_workday_timetable
+[2026-07-16T23:18:00.102+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.102+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_workday_timetable
+[2026-07-16T23:18:00.102+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.102+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-16T23:18:00.108+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.108+0530] {dag.py:3262} INFO - Creating ORM DAG for example_workday_timetable
+[2026-07-16T23:18:00.114+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:00.114+0530] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-01 00:00:00+00:00, run_after=2021-01-02 00:00:00+00:00
+[2026-07-16T23:18:00.122+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_workday_timetable.py took 0.153 seconds

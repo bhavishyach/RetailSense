@@ -1,0 +1,6 @@
+#!/Users/bhavishyachallagolla/Desktop/RetailSense/.venv/bin/python
+import sys
+from charset_normalizer import cli
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(cli.cli_detect())

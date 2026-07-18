@@ -1,0 +1,15 @@
+[2026-07-16T23:19:25.363+0530] {processor.py:186} INFO - Started process (PID=74334) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-07-16T23:19:25.365+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_bash_operator.py for tasks to queue
+[2026-07-16T23:19:25.366+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.366+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-07-16T23:19:25.376+0530] {processor.py:925} INFO - DAG(s) 'example_bash_operator' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_bash_operator.py
+[2026-07-16T23:19:25.500+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.499+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_bash_operator
+[2026-07-16T23:19:25.506+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.506+0530] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_bash_operator
+[2026-07-16T23:19:25.510+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.509+0530] {override.py:1912} INFO - Created Permission View: can read on DAG:example_bash_operator
+[2026-07-16T23:19:25.514+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.514+0530] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_bash_operator
+[2026-07-16T23:19:25.518+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.517+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_bash_operator
+[2026-07-16T23:19:25.521+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.521+0530] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_bash_operator
+[2026-07-16T23:19:25.523+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.523+0530] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_bash_operator
+[2026-07-16T23:19:25.524+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.524+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-16T23:19:25.530+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.530+0530] {dag.py:3262} INFO - Creating ORM DAG for example_bash_operator
+[2026-07-16T23:19:25.536+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:19:25.536+0530] {dag.py:4180} INFO - Setting next_dagrun for example_bash_operator to 2026-07-15 00:00:00+00:00, run_after=2026-07-16 00:00:00+00:00
+[2026-07-16T23:19:25.545+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_bash_operator.py took 0.184 seconds

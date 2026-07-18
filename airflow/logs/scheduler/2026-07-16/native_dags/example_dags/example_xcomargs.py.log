@@ -1,0 +1,24 @@
+[2026-07-16T23:17:55.426+0530] {processor.py:186} INFO - Started process (PID=72539) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_xcomargs.py
+[2026-07-16T23:17:55.428+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_xcomargs.py for tasks to queue
+[2026-07-16T23:17:55.428+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.428+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_xcomargs.py
+[2026-07-16T23:17:55.453+0530] {processor.py:925} INFO - DAG(s) 'example_xcom_args', 'example_xcom_args_with_operators' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_xcomargs.py
+[2026-07-16T23:17:55.550+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.550+0530] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_xcom_args
+[2026-07-16T23:17:55.555+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.554+0530] {override.py:1912} INFO - Created Permission View: can read on DAG:example_xcom_args
+[2026-07-16T23:17:55.558+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.558+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_xcom_args
+[2026-07-16T23:17:55.562+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.561+0530] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_xcom_args
+[2026-07-16T23:17:55.565+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.564+0530] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_xcom_args
+[2026-07-16T23:17:55.567+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.567+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_xcom_args
+[2026-07-16T23:17:55.570+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.569+0530] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_xcom_args
+[2026-07-16T23:17:55.576+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.575+0530] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_xcom_args_with_operators
+[2026-07-16T23:17:55.578+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.578+0530] {override.py:1912} INFO - Created Permission View: can read on DAG:example_xcom_args_with_operators
+[2026-07-16T23:17:55.580+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.580+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_xcom_args_with_operators
+[2026-07-16T23:17:55.584+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.584+0530] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_xcom_args_with_operators
+[2026-07-16T23:17:55.586+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.586+0530] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_xcom_args_with_operators
+[2026-07-16T23:17:55.589+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.589+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_xcom_args_with_operators
+[2026-07-16T23:17:55.591+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.591+0530] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_xcom_args_with_operators
+[2026-07-16T23:17:55.591+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.591+0530] {dag.py:3239} INFO - Sync 2 DAGs
+[2026-07-16T23:17:55.599+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.598+0530] {dag.py:3262} INFO - Creating ORM DAG for example_xcom_args
+[2026-07-16T23:17:55.599+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.599+0530] {dag.py:3262} INFO - Creating ORM DAG for example_xcom_args_with_operators
+[2026-07-16T23:17:55.599+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.599+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
+[2026-07-16T23:17:55.599+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:17:55.599+0530] {dag.py:4180} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
+[2026-07-16T23:17:55.607+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_xcomargs.py took 0.183 seconds

@@ -1,0 +1,15 @@
+[2026-07-16T23:18:37.389+0530] {processor.py:186} INFO - Started process (PID=73369) to work on /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-16T23:18:37.391+0530] {processor.py:914} INFO - Processing file /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2026-07-16T23:18:37.391+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.391+0530] {dagbag.py:588} INFO - Filling up the DagBag from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-16T23:18:37.412+0530] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2026-07-16T23:18:37.518+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.518+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG:example_params_ui_tutorial
+[2026-07-16T23:18:37.522+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.522+0530] {override.py:1912} INFO - Created Permission View: can edit on DAG:example_params_ui_tutorial
+[2026-07-16T23:18:37.524+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.524+0530] {override.py:1912} INFO - Created Permission View: can read on DAG:example_params_ui_tutorial
+[2026-07-16T23:18:37.528+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.527+0530] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:example_params_ui_tutorial
+[2026-07-16T23:18:37.530+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.530+0530] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:example_params_ui_tutorial
+[2026-07-16T23:18:37.533+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.532+0530] {override.py:1912} INFO - Created Permission View: can create on DAG Run:example_params_ui_tutorial
+[2026-07-16T23:18:37.535+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.535+0530] {override.py:1912} INFO - Created Permission View: can read on DAG Run:example_params_ui_tutorial
+[2026-07-16T23:18:37.535+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.535+0530] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-07-16T23:18:37.542+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.541+0530] {dag.py:3262} INFO - Creating ORM DAG for example_params_ui_tutorial
+[2026-07-16T23:18:37.542+0530] {logging_mixin.py:190} INFO - [2026-07-16T23:18:37.542+0530] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2026-07-16T23:18:37.549+0530] {processor.py:208} INFO - Processing /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.9/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.161 seconds

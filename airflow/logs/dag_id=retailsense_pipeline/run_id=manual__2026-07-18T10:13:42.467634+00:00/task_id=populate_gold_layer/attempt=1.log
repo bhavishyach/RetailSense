@@ -1,0 +1,29 @@
+[2026-07-18T15:43:56.911+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-18T15:43:56.915+0530] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retailsense_pipeline.populate_gold_layer manual__2026-07-18T10:13:42.467634+00:00 [queued]>
+[2026-07-18T15:43:56.917+0530] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retailsense_pipeline.populate_gold_layer manual__2026-07-18T10:13:42.467634+00:00 [queued]>
+[2026-07-18T15:43:56.917+0530] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2026-07-18T15:43:56.919+0530] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): populate_gold_layer> on 2026-07-18 10:13:42.467634+00:00
+[2026-07-18T15:43:56.923+0530] {logging_mixin.py:190} WARNING - /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=4562) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-07-18T15:43:56.923+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'retailsense_pipeline', 'populate_gold_layer', 'manual__2026-07-18T10:13:42.467634+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/retailsense_pipeline.py', '--cfg-path', '/var/folders/6d/4xc4k_515k3_5l_yp9jq8r540000gn/T/tmpe9vemu8a']
+[2026-07-18T15:43:56.923+0530] {standard_task_runner.py:72} INFO - Started process 4564 to run task
+[2026-07-18T15:43:56.923+0530] {standard_task_runner.py:105} INFO - Job 26: Subtask populate_gold_layer
+[2026-07-18T15:43:56.933+0530] {task_command.py:467} INFO - Running <TaskInstance: retailsense_pipeline.populate_gold_layer manual__2026-07-18T10:13:42.467634+00:00 [running]> on host unknown_4e:67:37:a7:d4:0f
+[2026-07-18T15:43:56.947+0530] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='retailsense_pipeline' AIRFLOW_CTX_TASK_ID='populate_gold_layer' AIRFLOW_CTX_EXECUTION_DATE='2026-07-18T10:13:42.467634+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-07-18T10:13:42.467634+00:00'
+[2026-07-18T15:43:56.948+0530] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-07-18T15:43:56.948+0530] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-07-18T15:43:56.948+0530] {logging_mixin.py:190} INFO - Current task name:populate_gold_layer state:running start_date:2026-07-18 10:13:56.915415+00:00
+[2026-07-18T15:43:56.948+0530] {logging_mixin.py:190} INFO - Dag name:retailsense_pipeline and current dag run status:running
+[2026-07-18T15:43:56.948+0530] {taskinstance.py:732} INFO - ::endgroup::
+[2026-07-18T15:43:56.948+0530] {subprocess.py:78} INFO - Tmp dir root location: /var/folders/6d/4xc4k_515k3_5l_yp9jq8r540000gn/T
+[2026-07-18T15:43:56.949+0530] {subprocess.py:88} INFO - Running command: ['/bin/bash', '-c', 'cd /Users/bhavishyachallagolla/Desktop/RetailSense && python evaluation.py']
+[2026-07-18T15:43:56.951+0530] {subprocess.py:99} INFO - Output:
+[2026-07-18T15:43:56.994+0530] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-07-18T15:43:56.999+0530] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-07-18T15:43:56.999+0530] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=retailsense_pipeline, task_id=populate_gold_layer, run_id=manual__2026-07-18T10:13:42.467634+00:00, execution_date=20260718T101342, start_date=20260718T101356, end_date=20260718T101356
+[2026-07-18T15:43:57.002+0530] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-07-18T15:43:57.002+0530] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-07-18T15:43:57.003+0530] {logging_mixin.py:190} INFO - Dag name:retailsense_pipeline queued_at:2026-07-18 10:13:42.477011+00:00
+[2026-07-18T15:43:57.003+0530] {logging_mixin.py:190} INFO - Task hostname:unknown_4e:67:37:a7:d4:0f operator:BashOperator
+[2026-07-18T15:43:57.020+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-07-18T15:43:57.023+0530] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-07-18T15:43:57.023+0530] {local_task_job_runner.py:245} INFO - ::endgroup::

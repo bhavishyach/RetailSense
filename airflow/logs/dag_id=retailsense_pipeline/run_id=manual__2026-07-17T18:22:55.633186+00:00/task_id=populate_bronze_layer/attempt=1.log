@@ -1,0 +1,49 @@
+[2026-07-17T23:52:57.559+0530] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-07-17T23:52:57.562+0530] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: retailsense_pipeline.populate_bronze_layer manual__2026-07-17T18:22:55.633186+00:00 [queued]>
+[2026-07-17T23:52:57.563+0530] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: retailsense_pipeline.populate_bronze_layer manual__2026-07-17T18:22:55.633186+00:00 [queued]>
+[2026-07-17T23:52:57.563+0530] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2026-07-17T23:52:57.566+0530] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): populate_bronze_layer> on 2026-07-17 18:22:55.633186+00:00
+[2026-07-17T23:52:57.569+0530] {logging_mixin.py:190} WARNING - /Users/bhavishyachallagolla/Desktop/RetailSense/.venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:70 DeprecationWarning: This process (pid=844) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-07-17T23:52:57.570+0530] {standard_task_runner.py:72} INFO - Started process 847 to run task
+[2026-07-17T23:52:57.569+0530] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'retailsense_pipeline', 'populate_bronze_layer', 'manual__2026-07-17T18:22:55.633186+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/retailsense_pipeline.py', '--cfg-path', '/var/folders/6d/4xc4k_515k3_5l_yp9jq8r540000gn/T/tmpq5u0urol']
+[2026-07-17T23:52:57.570+0530] {standard_task_runner.py:105} INFO - Job 9: Subtask populate_bronze_layer
+[2026-07-17T23:52:57.580+0530] {task_command.py:467} INFO - Running <TaskInstance: retailsense_pipeline.populate_bronze_layer manual__2026-07-17T18:22:55.633186+00:00 [running]> on host Bhavishyas-MacBook-Air.local
+[2026-07-17T23:52:57.593+0530] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='retailsense_pipeline' AIRFLOW_CTX_TASK_ID='populate_bronze_layer' AIRFLOW_CTX_EXECUTION_DATE='2026-07-17T18:22:55.633186+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-07-17T18:22:55.633186+00:00'
+[2026-07-17T23:52:57.594+0530] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-07-17T23:52:57.594+0530] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-07-17T23:52:57.594+0530] {logging_mixin.py:190} INFO - Current task name:populate_bronze_layer state:running start_date:2026-07-17 18:22:57.562161+00:00
+[2026-07-17T23:52:57.594+0530] {logging_mixin.py:190} INFO - Dag name:retailsense_pipeline and current dag run status:running
+[2026-07-17T23:52:57.594+0530] {taskinstance.py:732} INFO - ::endgroup::
+[2026-07-17T23:52:57.595+0530] {subprocess.py:78} INFO - Tmp dir root location: /var/folders/6d/4xc4k_515k3_5l_yp9jq8r540000gn/T
+[2026-07-17T23:52:57.595+0530] {subprocess.py:88} INFO - Running command: ['/bin/bash', '-c', 'cd /Users/bhavishyachallagolla/Desktop/RetailSense && python ingestion.py']
+[2026-07-17T23:52:57.597+0530] {subprocess.py:99} INFO - Output:
+[2026-07-17T23:52:57.620+0530] {subprocess.py:106} INFO - 2026-07-17 23:52:57,620 - INFO - ================================================================================
+[2026-07-17T23:52:57.620+0530] {subprocess.py:106} INFO - 2026-07-17 23:52:57,620 - INFO - Starting RetailSense Bronze Layer Ingestion
+[2026-07-17T23:52:57.621+0530] {subprocess.py:106} INFO - 2026-07-17 23:52:57,620 - INFO - ================================================================================
+[2026-07-17T23:52:57.621+0530] {subprocess.py:106} INFO - 2026-07-17 23:52:57,621 - INFO - Loaded 248 categories from data/amazon_categories.csv
+[2026-07-17T23:52:57.621+0530] {subprocess.py:106} INFO - /Users/bhavishyachallagolla/Desktop/RetailSense/ingestion.py:172: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+[2026-07-17T23:52:57.621+0530] {subprocess.py:106} INFO -   'ingested_at': datetime.utcnow().isoformat(),
+[2026-07-17T23:53:02.758+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:02,758 - INFO - Processed 1426337 product records from data/amazon_products.csv
+[2026-07-17T23:53:02.759+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:02,758 - INFO - Valid records: 1426337, Skipped: 0, Duplicates: 0
+[2026-07-17T23:53:02.817+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:02,817 - INFO - Created/verified raw_products table in retailsense.db
+[2026-07-17T23:53:05.881+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,880 - INFO - Inserted 0 records into raw_products
+[2026-07-17T23:53:05.936+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - ================================================================================
+[2026-07-17T23:53:05.936+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - Ingestion Summary
+[2026-07-17T23:53:05.936+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - ================================================================================
+[2026-07-17T23:53:05.936+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - Products read:       1426337
+[2026-07-17T23:53:05.936+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - Records inserted:    0
+[2026-07-17T23:53:05.936+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - Records skipped:     0
+[2026-07-17T23:53:05.937+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - Duplicate ASINs:     0
+[2026-07-17T23:53:05.937+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - Categories loaded:   248
+[2026-07-17T23:53:05.937+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - Database created:    retailsense.db
+[2026-07-17T23:53:05.937+0530] {subprocess.py:106} INFO - 2026-07-17 23:53:05,936 - INFO - ================================================================================
+[2026-07-17T23:53:06.090+0530] {subprocess.py:110} INFO - Command exited with return code 0
+[2026-07-17T23:53:06.098+0530] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-07-17T23:53:06.098+0530] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=retailsense_pipeline, task_id=populate_bronze_layer, run_id=manual__2026-07-17T18:22:55.633186+00:00, execution_date=20260717T182255, start_date=20260717T182257, end_date=20260717T182306
+[2026-07-17T23:53:06.102+0530] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-07-17T23:53:06.102+0530] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-07-17T23:53:06.102+0530] {logging_mixin.py:190} INFO - Dag name:retailsense_pipeline queued_at:2026-07-17 18:22:55.648988+00:00
+[2026-07-17T23:53:06.102+0530] {logging_mixin.py:190} INFO - Task hostname:Bhavishyas-MacBook-Air.local operator:BashOperator
+[2026-07-17T23:53:06.136+0530] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-07-17T23:53:06.143+0530] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-07-17T23:53:06.144+0530] {local_task_job_runner.py:245} INFO - ::endgroup::
