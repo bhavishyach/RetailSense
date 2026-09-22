@@ -1,0 +1,7 @@
+streamlit
+streamlit-autorefresh
+pandas
+psycopg2-binary
+apache-airflow
+openai
+pytest

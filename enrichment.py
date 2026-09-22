@@ -1,7 +1,7 @@
 """
 RetailSense Silver Layer Enrichment Pipeline
 
-Reads raw_products from retailsense.db, sends batches to the Claude API,
+Reads raw_products from retailsense.db, sends batches to a local Ollama model,
 receives structured AI outputs, and writes results to enriched_products.
 """
 
@@ -22,8 +22,8 @@ ENRICHED_TABLE = 'enriched_products'
 DEFAULT_BATCH_SIZE = 5
 DEFAULT_RATE_LIMIT = 1.0
 DEFAULT_MAX_TOKENS = 300
-DEFAULT_MODEL = 'claude-3.5'
-DEFAULT_API_URL = 'https://api.anthropic.com/v1/complete'
+DEFAULT_MODEL = 'qwen3.5:9b'
+DEFAULT_API_URL = 'http://localhost:11434/v1'
 
 
 def ensure_enriched_table(conn: sqlite3.Connection) -> None:
@@ -137,49 +137,36 @@ def build_prompt(records: List[Dict[str, Any]]) -> str:
     return prompt
 
 
-def call_claude_api(
+def call_local_api(
     prompt: str,
     api_url: str,
-    api_key: str,
     model: str,
     max_tokens: int,
     temperature: float = 0.0,
     max_retries: int = 3
 ) -> str:
-    data = {
-        'model': model,
-        'prompt': prompt,
-        'max_tokens_to_sample': max_tokens,
-        'temperature': temperature,
-        'stop_sequences': ["\n\n"],
-    }
-    body = json.dumps(data).encode('utf-8')
-    headers = {
-        'Content-Type': 'application/json',
-        'X-API-Key': api_key,
-    }
-    request = urllib.request.Request(api_url, data=body, headers=headers, method='POST')
+    try:
+        from openai import OpenAI
+    except ImportError as exc:
+        raise RuntimeError('The OpenAI Python SDK is required for local Ollama mode') from exc
+
+    client = OpenAI(base_url=api_url, api_key='ollama')
 
     for attempt in range(1, max_retries + 1):
         try:
-            with urllib.request.urlopen(request, timeout=120) as response:
-                response_data = response.read().decode('utf-8')
-                payload = json.loads(response_data)
-                if 'completion' in payload:
-                    return payload['completion']
-                if 'output' in payload:
-                    return payload['output']
-                if 'text' in payload:
-                    return payload['text']
-                raise ValueError('Claude response missing known text field')
-        except urllib.error.HTTPError as e:
-            body = e.read().decode('utf-8', errors='ignore')
-            if 400 <= e.code < 500:
-                raise RuntimeError(f'Claude API returned {e.code}: {body}')
-            if attempt == max_retries:
-                raise
-            time.sleep(2 ** attempt)
-        except (urllib.error.URLError, ValueError) as exc:
+            response = client.chat.completions.create(
+                model=model,
+                messages=[{'role': 'user', 'content': prompt}],
+                max_tokens=max_tokens,
+                temperature=temperature,
+                reasoning_effort='none',
+                extra_body={'think': False, 'format': 'json'},
+            )
+            content = response.choices[0].message.content
+            if not content:
+                raise ValueError('Ollama response contained no message content')
+            return content
+        except Exception:
             if attempt == max_retries:
                 raise
             time.sleep(2 ** attempt)
@@ -187,11 +174,11 @@ def call_claude_api(
 
 def parse_claude_output(raw_output: str) -> List[Dict[str, Any]]:
     cleaned = raw_output.strip()
-    # Attempt to extract the first JSON array or object from Claude output.
     if cleaned.startswith('['):
-        return json.loads(cleaned)
+        parsed, _ = json.JSONDecoder().raw_decode(cleaned)
+        return parsed
     if cleaned.startswith('{'):
-        parsed = json.loads(cleaned)
+        parsed, _ = json.JSONDecoder().raw_decode(cleaned)
         if isinstance(parsed, dict) and 'products' in parsed:
             return parsed['products']
         raise ValueError('Expected a JSON array or object with products')
@@ -236,7 +223,7 @@ def prepare_enrichment_rows(
     for item in response_items:
         asin = item.get('asin')
         if asin not in record_map:
-            raise ValueError(f"Claude response contains unknown ASIN: {asin}")
+            raise ValueError(f"Local model response contains unknown ASIN: {asin}")
         record = record_map[asin]
         mapped.append(
             {
@@ -394,11 +381,15 @@ def enrich_batch(
     start_time = time.perf_counter()
     model_version = model
     try:
-        if use_mock or api_key is None:
+        if use_mock:
             response_items = mock_claude_response(batch)
         else:
-            raw_output = call_claude_api(prompt, api_url, api_key, model, max_tokens)
+            raw_output = call_local_api(prompt, api_url, model, max_tokens)
             response_items = parse_claude_output(raw_output)
+            if len(response_items) != len(batch):
+                raise ValueError(
+                    f'Local model returned {len(response_items)} results for {len(batch)} products'
+                )
         latency_ms = round((time.perf_counter() - start_time) * 1000, 3)
         enriched_rows = prepare_enrichment_rows(batch, response_items, latency_ms, model_version)
         inserted = insert_enriched_records(conn, enriched_rows)
@@ -499,23 +490,22 @@ def run_enrichment(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description='RetailSense Silver Layer Enrichment')
     parser.add_argument('--db-path', default=DB_PATH, help='Path to retailsense.db')
-    parser.add_argument('--batch-size', type=int, default=DEFAULT_BATCH_SIZE, help='Number of records per Claude request')
-    parser.add_argument('--rate-limit', type=float, default=DEFAULT_RATE_LIMIT, help='Seconds between Claude API requests')
-    parser.add_argument('--max-tokens', type=int, default=DEFAULT_MAX_TOKENS, help='Max tokens for Claude API request')
-    parser.add_argument('--model', default=DEFAULT_MODEL, help='Claude model version')
-    parser.add_argument('--api-url', default=os.getenv('CLAUDE_API_URL', DEFAULT_API_URL), help='Claude API URL')
+    parser.add_argument('--batch-size', type=int, default=DEFAULT_BATCH_SIZE, help='Number of products per local model request')
+    parser.add_argument('--rate-limit', type=float, default=DEFAULT_RATE_LIMIT, help='Seconds between enrichment batches')
+    parser.add_argument('--max-tokens', type=int, default=DEFAULT_MAX_TOKENS, help='Maximum output tokens for the local model')
+    parser.add_argument('--model', default=os.getenv('OLLAMA_MODEL', DEFAULT_MODEL), help='Ollama model identifier')
+    parser.add_argument('--api-url', default=os.getenv('OLLAMA_API_URL', DEFAULT_API_URL), help='OpenAI-compatible Ollama base URL')
     parser.add_argument('--limit', type=int, default=5, help='Total number of records to enrich for validation; set 0 for all pending records')
-    parser.add_argument('--mock', action='store_true', help='Use a mock Claude response instead of calling the real API')
+    parser.add_argument('--local', action='store_true', help='Use the local Ollama model (the default unless --mock is set)')
+    parser.add_argument('--mock', action='store_true', help='Use mock responses instead of calling Ollama')
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    api_key = os.getenv('CLAUDE_API_KEY')
-    use_mock = args.mock or api_key is None
-    if api_key is None and not args.mock:
-        logger = get_logger()
-        logger.warning('CLAUDE_API_KEY not set. Falling back to mock enrichment mode.')
+    use_mock = args.mock
+    if args.mock and args.local:
+        raise ValueError('--mock and --local cannot be used together')
 
     total_limit = None if args.limit == 0 else args.limit
     run_enrichment(
@@ -525,7 +515,7 @@ def main() -> None:
         rate_limit=args.rate_limit,
         model=args.model,
         api_url=args.api_url,
-        api_key=api_key,
+        api_key='ollama',
         use_mock=use_mock,
         total_limit=total_limit,
     )

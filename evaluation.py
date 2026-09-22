@@ -113,11 +113,87 @@ def get_postgres_connection() -> psycopg2.extensions.connection:
     return psycopg2.connect(
         dbname=os.getenv('PGDATABASE', 'retailsense_gold'),
         user=os.getenv('PGUSER', 'bhavishyachallagolla'),
-        password=os.getenv('PGPASSWORD', ''),
+        password=os.getenv('PGPASSWORD', 'retailsense123'),
         host=os.getenv('PGHOST', 'localhost'),
         port=os.getenv('PGPORT', '5432'),
     )
 
+def create_gold_tables(conn):
+    """
+    Create the Gold layer tables if they do not already exist.
+    """
+
+    with conn.cursor() as cur:
+
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS gold_pipeline_runs (
+
+            run_id UUID PRIMARY KEY,
+
+            run_timestamp TIMESTAMP,
+
+            total_records_processed INTEGER,
+
+            total_enriched INTEGER,
+
+            total_failed INTEGER,
+
+            total_skipped INTEGER,
+
+            avg_confidence_score FLOAT,
+
+            avg_latency_ms FLOAT,
+
+            p50_latency_ms FLOAT,
+
+            p95_latency_ms FLOAT,
+
+            failure_rate FLOAT,
+
+            cost_estimate_usd FLOAT
+
+        );
+        """)
+
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS gold_category_metrics (
+
+            id UUID PRIMARY KEY,
+
+            run_id UUID REFERENCES gold_pipeline_runs(run_id),
+
+            category TEXT,
+
+            record_count INTEGER,
+
+            avg_confidence FLOAT,
+
+            failure_rate FLOAT,
+
+            completeness_score FLOAT
+
+        );
+        """)
+
+        cur.execute("""
+        CREATE TABLE IF NOT EXISTS gold_record_outcomes (
+
+            id UUID PRIMARY KEY,
+
+            asin TEXT,
+
+            run_id UUID REFERENCES gold_pipeline_runs(run_id),
+
+            final_status TEXT,
+
+            quality_flags JSONB,
+
+            evaluated_at TIMESTAMP
+
+        );
+        """)
+
+    conn.commit()
 
 def ensure_pipeline_run(
     run_id: str,
@@ -383,6 +459,8 @@ def run_record_evaluation(
         close_conn = True
     else:
         close_conn = False
+
+    create_gold_tables(conn)
 
     resolved_run_id = run_id or str(uuid.uuid4())
     try:

@@ -1,0 +1,44 @@
+services:
+
+  postgres:
+    image: postgres:16
+
+    container_name: retailsense_postgres
+
+    restart: always
+
+    environment:
+      POSTGRES_DB: retailsense_gold
+      POSTGRES_USER: bhavishyachallagolla
+      POSTGRES_PASSWORD: retailsense123
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  dashboard:
+    build: .
+
+    container_name: retailsense_dashboard
+
+    depends_on:
+      - postgres
+
+    environment:
+      PGHOST: postgres
+      PGDATABASE: retailsense_gold
+      PGUSER: bhavishyachallagolla
+      PGPASSWORD: retailsense123
+
+    ports:
+      - "8501:8501"
+
+    volumes:
+      - .:/app
+
+    command: streamlit run dashboard.py --server.address=0.0.0.0
+
+volumes:
+  postgres_data:

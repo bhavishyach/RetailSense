@@ -2,6 +2,7 @@ import streamlit as st
 import psycopg2
 import pandas as pd
 from streamlit_autorefresh import st_autorefresh
+import os
 
 st.set_page_config(
     page_title="RetailSense AI Dashboard",
@@ -72,11 +73,11 @@ AI-powered Retail Data Enrichment Monitoring Dashboard
 """, unsafe_allow_html=True)
 
 conn = psycopg2.connect(
-    dbname="retailsense_gold",
-    user="bhavishyachallagolla",
-    password="",
-    host="localhost",
-    port="5432"
+    dbname=os.getenv("PGDATABASE", "retailsense_gold"),
+    user=os.getenv("PGUSER", "bhavishyachallagolla"),
+    password=os.getenv("PGPASSWORD", "retailsense123"),
+    host=os.getenv("PGHOST", "localhost"),
+    port=os.getenv("PGPORT", "5432")
 )
 
 latest_query = """
